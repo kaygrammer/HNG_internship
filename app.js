@@ -5,7 +5,7 @@ app.use(express.json())
 
 const port = 3000
 
-const info = { "slackUsername": "kayode", "backend": true, "age": 25, "bio": "I am an aspiring software engineer" }
+const info = { "slackUsername": "kayode olaoye", "backend": true, "age": 25, "bio": "I am an aspiring software engineer" }
 
 app.get('/', (req, res)=>{
     res.json(info)
