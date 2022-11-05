@@ -1,8 +1,12 @@
 const express = require('express');
 const app = express()
 const cors = require('cors')
+const operationRouter = require('./routes/task')
 
 app.use(express.json())
+
+
+app.use('/api/v1/operation', operationRouter);
 
 
 const port = process.env.PORT || 3000
